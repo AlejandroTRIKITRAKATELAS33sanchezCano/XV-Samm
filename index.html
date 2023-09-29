@@ -12,7 +12,7 @@
     <title>Samatha Paola | Mis XV</title>
 </head>
 
-<body>
+<body onclick="PlayAudio()">
     <header class="HeaderPrincipal">
         <img src="Assets/IMG/Samatha.png" class="logo" title="Samatha Paola Mis XV"></img>
         <div class="Titulos">
@@ -100,14 +100,6 @@
                     <h3>Regalo</h3>
                 </div>
             </div>
-            <div class="card1">
-                <figure>
-                    <img src="./Assets/IMG/Dinero.jpg">
-                </figure>
-                <div class="contenido-card">
-                    <h3>Sobre De Efectivo</h3>
-                </div>
-            </div>
     </section>
     <section class="video">
         <img src="./Assets/IMG/LogoVideo.webp" alt="">
@@ -176,9 +168,15 @@
         </div>
     </footer>
 
-    <audio autoplay loop>
+    <audio id="audio1" autoplay loop>
         <source src="./Assets/Audio/cancion.mp3" type="audio/mpeg">
     </audio>
+
+    <script>
+        function PlayAudio(){
+            document.getElementById("audio1").play;
+        }
+    </script>
     <script src="./js/simpluCountDown.min.js"></script>
     <script src="./js/countDown.js"></script>
     <script src="./js/scrollreveal.js"></script>
